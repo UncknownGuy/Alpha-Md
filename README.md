@@ -1,4 +1,4 @@
-## BACA DULU BANG
+## OLD VERSION OF ALPHA
 
 > **Warning**: Sc nya gk support termux. [`Klik disini untuk download sc yg support termux`](https://github.com/zeeoneofficial/Haruka-Md#For-Termux)
 
