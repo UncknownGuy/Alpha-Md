@@ -5,7 +5,7 @@
 -----------------------------------------------------
 
 <p align="center">
-<img src="https://telegra.ph/file/2c0b8c9217a77a14c0aa7.jpg" alt="ALPHA BOT" width="100"/>
+<img src="https://github.com/UncknownGuy/Haruka-Md/blob/0cdd8196cde3d4116514c2675782d1c88c1b274a/Haruka.jpg" alt="ALPHA BOT" width="100"/>
 
 
 </p>
