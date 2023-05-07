@@ -1,6 +1,6 @@
 ## OLD VERSION OF ALPHA
 
-> **Warning**: Not Support on Termux Use this To SC Files For Termux. [`sc yg dupport for termux`](https://github.com/zeeoneofficial/Haruka-Md#For-Termux)
+> **Warning**: Not Support on Termux Use this To SC Files For Termux. [`sc yg support for termux`](https://github.com/zeeoneofficial/Haruka-Md#For-Termux)
 
 -----------------------------------------------------
 
