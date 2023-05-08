@@ -13,47 +13,64 @@ function toCommas(x) {
 }
 
 exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerName, botName, jam, tanggal, runtime, isCreator, isPremium, sender, limitCount, limit, gcount, glimit, balance, prefix) => {
-    return`${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}
+    return`*Hello* ${pushname !== undefined ? pushname : 'Kak'}
 
-*Hello* {pushname !== undefined ? pushname : 'Kak'}
+ ${pushname !== undefined ? pushname : 'Kak'}
 ${mundur}
 
 *STATISTICS*
+____________________
+|
+|
 |-- *Upload* : ${upload}
 |-- *Downloads* : ${download}
-
+|
+|____________________
 *BOT INFO*
+|
+|
 |-- *Created By* : ${ownerName}
 |-- *Bot Name* : ${botName}
 |-- *Time* : ${jam}
 |-- *Date* : ${tanggal(new Date())}
 |-- *Uptime* : ${runtime(process.uptime())}
-
+|
+|
 *USER INFO*
+_____________________
+|
+|
 |-- *Name* : ${pushname !== undefined ? pushname : '-'}
 |-- *Status* : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
 |-- *Limit* : ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
 |-- *Limit Game* : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
 |-- *Balance* : ${getBalance(sender, balance)}
 |-- *Role* : ${role}
- 
- 
+| 
+|_____________________ 
 *MAIN MENU*${petik}
-| • ${prefix}*menu*
-| • ${prefix}*infobot*
-| • ${prefix}*donate*
-| • ${prefix}*dashboard*
-| • ${prefix}*owner*
-| • ${prefix}*cekdrive*
-| • ${prefix}*cekbandwidth*
-| • ${prefix}*cekpremium*
-| • ${prefix}*listpremium*
-| • ${prefix}*listsewa*
-| • ${prefix}*speed*
-| • ${prefix}*runtime*
-| • ${prefix}*listbahasa*${petik}
-
+______________________
+|
+|
+| ${prefix}*menu*
+| ${prefix}*infobot*
+| ${prefix}*donate*
+| ${prefix}*dashboard*
+| ${prefix}*owner*
+| ${prefix}*cekdrive*
+| ${prefix}*cekbandwidth*
+| ${prefix}*cekpremium*
+| ${prefix}*listpremium*
+| ${prefix}*listsewa*
+| ${prefix}*speed*
+| ${prefix}*runtime*
+| ${prefix}*listbahasa*${petik}
+|
+|________________________
 *CONVERTER/TOOLS*${petik} 
+_________________________
+|
+|
 | • ${prefix}sticker
 | • ${prefix}stickerwm
 | • ${prefix}smeme
@@ -73,8 +90,13 @@ ${mundur}
 | • ${prefix}foliokanan
 | • ${prefix}say
 | • ${prefix}translate${petik}
+|
+|____________________________
 
 *ANONYMOUS CHATS*${petik}
+__________________________
+|
+|
 | • ${prefix}menfess
 | • ${prefix}confess
 | • ${prefix}balasmenfess
@@ -85,8 +107,13 @@ ${mundur}
 | • ${prefix}next
 | • ${prefix}stop
 | • ${prefix}sendprofile${petik}
+|
+|_______________________
 
 *STORE MENU*${petik}
+________________________
+|
+|
 | • ${prefix}list
 | • ${prefix}addlist
 | • ${prefix}dellist
@@ -104,51 +131,60 @@ ${mundur}
 | • ${prefix}setproses
 | • proses < reply chat >
 | • done < reply chat >${petik}
+|
+|_______________________________
 
 *RPG GAMES*${petik}
- • ${prefix}inventory
- • ${prefix}mining
- • ${prefix}buy 
- • ${prefix}sell
- • ${prefix}heal
- • ${prefix}hunt
- • ${prefix}adventure
- • ${prefix}luckyday
- • ${prefix}killslime
- • ${prefix}killgoblin
- • ${prefix}killdevil
- • ${prefix}killbehemoth
- • ${prefix}killdemon
- • ${prefix}killdemonking
- • ${prefix}joinrpg
- • ${prefix}sellikan
- • ${prefix}sellbesi
- • ${prefix}sellemas
- • ${prefix}jelajah
- • ${prefix}mancing
- • ${prefix}jualikan
- • ${prefix}jualcoal
- • ${prefix}lebur
- • ${prefix}jualstone
- • ${prefix}jualingot
- • ${prefix}jualkayu
- • ${prefix}nebang
- • ${prefix}goplanet
- • ${prefix}jualbahankimia${petik}
-
+____________________________
+|
+|
+| ${prefix}inventory
+| ${prefix}mining
+| ${prefix}buy 
+| ${prefix}sell
+| ${prefix}heal
+| ${prefix}hunt
+| ${prefix}adventure
+| ${prefix}luckyday
+| ${prefix}killslime
+| ${prefix}killgoblin
+| ${prefix}killdevil
+| ${prefix}killbehemoth
+| ${prefix}killdemon
+| ${prefix}killdemonking
+| ${prefix}joinrpg
+| ${prefix}sellikan
+| ${prefix}sellbesi
+| ${prefix}sellemas
+| ${prefix}jelajah
+| ${prefix}mancing
+| ${prefix}jualikan
+| ${prefix}jualcoal
+| ${prefix}lebur
+| ${prefix}jualstone
+| ${prefix}jualingot
+| ${prefix}jualkayu
+| ${prefix}nebang
+| ${prefix}goplanet
+| ${prefix}jualbahankimia${petik}
+|
+|_____________________________
 *DOWNLOADS MENU*${petik}
- • ${prefix}play
- • ${prefix}ytmp3
- • ${prefix}ytmp4
- • ${prefix}instagram
- • ${prefix}igphoto
- • ${prefix}igvideo
- • ${prefix}igreels
- • ${prefix}tiktok
- • ${prefix}tiktoknowm
- • ${prefix}tiktokaudio
- • ${prefix}mediafire
- • ${prefix}gitclone${petik}
+_____________________________
+|
+|
+| • ${prefix}play
+| • ${prefix}ytmp3
+| • ${prefix}ytmp4
+| • ${prefix}instagram
+| • ${prefix}igphoto
+| • ${prefix}igvideo
+| • ${prefix}igreels
+| • ${prefix}tiktok
+| • ${prefix}tiktoknowm
+| • ${prefix}tiktokaudio
+| • ${prefix}mediafire
+| • ${prefix}gitclone${petik}
 
 *GROUP MENU*${petik}
 | • ${prefix}autoaigc
@@ -188,20 +224,20 @@ ${mundur}
 | • ${prefix}checksewa${petik}
 
 *GAME MENU*${petik}
- • ${prefix}tebakgambar
- • ${prefix}tebakkata
- • ${prefix}tebakbendera
- • ${prefix}tebakkalimat
- • ${prefix}tebaksiapa
- • ${prefix}tebakkimia
- • ${prefix}tebaklirik
- • ${prefix}tebaktebakan
- • ${prefix}tekateki
- • ${prefix}susunkata
- • ${prefix}tictactoe
- • ${prefix}delttt
- • ${prefix}casino
- • ${prefix}delcasino${petik}
+| • ${prefix}tebakgambar
+| • ${prefix}tebakkata
+| • ${prefix}tebakbendera
+| • ${prefix}tebakkalimat
+| • ${prefix}tebaksiapa
+| • ${prefix}tebakkimia
+| • ${prefix}tebaklirik
+| • ${prefix}tebaktebakan
+| • ${prefix}tekateki
+| • ${prefix}susunkata
+| • ${prefix}tictactoe
+| • ${prefix}delttt
+| • ${prefix}casino
+| • ${prefix}delcasino${petik}
 
 *SEARCH MENU*${petik}
 | • ${prefix}lirik
@@ -216,32 +252,32 @@ ${mundur}
 
 
 *BALANCE MENU*${petik}
- • ${prefix}topglobal
- • ${prefix}toplocal
- • ${prefix}buylimit
- • ${prefix}buyglimit
- • ${prefix}transfer
- • ${prefix}limit
- • ${prefix}balance${petik}
+| • ${prefix}topglobal
+| • ${prefix}toplocal
+| • ${prefix}buylimit
+| • ${prefix}buyglimit
+| • ${prefix}transfer
+| • ${prefix}limit
+| • ${prefix}balance${petik}
 
 *STORAGE*${petik}
- • ${prefix}addstik
- • ${prefix}addvn
- • ${prefix}addimg
- • ${prefix}addvid
- • ${prefix}liststik
- • ${prefix}listvn
- • ${prefix}listimg
- • ${prefix}listvid${petik}
+| • ${prefix}addstik
+| • ${prefix}addvn
+| • ${prefix}addimg
+| • ${prefix}addvid
+| • ${prefix}liststik
+| • ${prefix}listvn
+| • ${prefix}listimg
+| • ${prefix}listvid${petik}
  
 *BAILEYS*${petik}
- • ${prefix}fitnah
- • ${prefix}nowa
- • ${prefix}getquoted
- • ${prefix}fakehidetag
- • ${prefix}react
- • ${prefix}setcmd
- • ${prefix}delcmd${petik}
+| • ${prefix}fitnah
+| • ${prefix}nowa
+| • ${prefix}getquoted
+| • ${prefix}fakehidetag
+| • ${prefix}react
+| • ${prefix}setcmd
+| • ${prefix}delcmd${petik}
 
 *OWNERS MENU*${petik}
 | • ${prefix}autoaipc
@@ -270,137 +306,137 @@ ${mundur}
 | • ${prefix}delsewa${petik}
 
 *ASUPAN MENU*${petik}
- • ${prefix}chika
- • ${prefix}delvira
- • ${prefix}ayu
- • ${prefix}bunga
- • ${prefix}aura
- • ${prefix}nisa
- • ${prefix}ziva
- • ${prefix}yana
- • ${prefix}viona
- • ${prefix}syania
- • ${prefix}riri
- • ${prefix}syifa
- • ${prefix}mama_gina
- • ${prefix}alcakenya
- • ${prefix}mangayutri
- • ${prefix}rikagusriani
- • ${prefix}asupan
- • ${prefix}bocil
- • ${prefix}geayubi
- • ${prefix}santuy
- • ${prefix}ukhty
- • ${prefix}syifa${petik}
+| • ${prefix}chika
+| • ${prefix}delvira
+| • ${prefix}ayu
+| • ${prefix}bunga
+| • ${prefix}aura
+| • ${prefix}nisa
+| • ${prefix}ziva
+| • ${prefix}yana
+| • ${prefix}viona
+| • ${prefix}syania
+| • ${prefix}riri
+| • ${prefix}syifa
+| • ${prefix}mama_gina
+| • ${prefix}alcakenya
+| • ${prefix}mangayutri
+| • ${prefix}rikagusriani
+| • ${prefix}asupan
+| • ${prefix}bocil
+| • ${prefix}geayubi
+| • ${prefix}santuy
+| • ${prefix}ukhty
+| • ${prefix}syifa${petik}
 
 *NSFW MENU*${petik}
- • ${prefix}baka
- • ${prefix}smug
- • ${prefix}neko_sfw
- • ${prefix}hentai_gif
- • ${prefix}spank
- • ${prefix}blowjob
- • ${prefix}cumarts
- • ${prefix}eroyuri
- • ${prefix}eroneko
- • ${prefix}erokemonomimi
- • ${prefix}erokitsune
- • ${prefix}ero
- • ${prefix}feet
- • ${prefix}erofeet
- • ${prefix}feetgif
- • ${prefix}femdom
- • ${prefix}futanari
- • ${prefix}hentai
- • ${prefix}holoero
- • ${prefix}holo
- • ${prefix}keta
- • ${prefix}kitsune
- • ${prefix}kemonomimi
- • ${prefix}pussyart
- • ${prefix}pussywankgif
- • ${prefix}girl_solo
- • ${prefix}girl_solo_gif
- • ${prefix}tits
- • ${prefix}trap
- • ${prefix}yuri
- • ${prefix}avatar2
- • ${prefix}anal
- • ${prefix}bj
- • ${prefix}boobs
- • ${prefix}classic
- • ${prefix}cumsluts
- • ${prefix}kuni
- • ${prefix}lesbian
- • ${prefix}neko
- • ${prefix}neko_gif
- • ${prefix}ahegao
- • ${prefix}bdsm
- • ${prefix}cuckold
- • ${prefix}cum
- • ${prefix}foot
- • ${prefix}gangbang
- • ${prefix}glasses
- • ${prefix}jahy
- • ${prefix}masturbation
- • ${prefix}nsfw_neko
- • ${prefix}orgy
- • ${prefix}panties
- • ${prefix}tentacles
- • ${prefix}thighs
- • ${prefix}zettai${petik}
+| • ${prefix}baka
+| • ${prefix}smug
+| • ${prefix}neko_sfw
+| • ${prefix}hentai_gif
+| • ${prefix}spank
+| • ${prefix}blowjob
+| • ${prefix}cumarts
+| • ${prefix}eroyuri
+| • ${prefix}eroneko
+| • ${prefix}erokemonomimi
+| • ${prefix}erokitsune
+| • ${prefix}ero
+| • ${prefix}feet
+| • ${prefix}erofeet
+| • ${prefix}feetgif
+| • ${prefix}femdom
+| • ${prefix}futanari
+| • ${prefix}hentai
+| • ${prefix}holoero
+| • ${prefix}holo
+| • ${prefix}keta
+| • ${prefix}kitsune
+| • ${prefix}kemonomimi
+| • ${prefix}pussyart
+| • ${prefix}pussywankgif
+| • ${prefix}girl_solo
+| • ${prefix}girl_solo_gif
+| • ${prefix}tits
+| • ${prefix}trap
+| • ${prefix}yuri
+| • ${prefix}avatar2
+| • ${prefix}anal
+| • ${prefix}bj
+| • ${prefix}boobs
+| • ${prefix}classic
+| • ${prefix}cumsluts
+| • ${prefix}kuni
+| • ${prefix}lesbian
+| • ${prefix}neko
+| • ${prefix}neko_gif
+| • ${prefix}ahegao
+| • ${prefix}bdsm
+| • ${prefix}cuckold
+| • ${prefix}cum
+| • ${prefix}foot
+| • ${prefix}gangbang
+| • ${prefix}glasses
+| • ${prefix}jahy
+| • ${prefix}masturbation
+| • ${prefix}nsfw_neko
+| • ${prefix}orgy
+| • ${prefix}panties
+| • ${prefix}tentacles
+| • ${prefix}thighs
+| • ${prefix}zettai${petik}
 
 
 *TEXTPRO MENU*${petik}
- • ${prefix}halloween2
- • ${prefix}horror
- • ${prefix}game8bit
- • ${prefix}layered
- • ${prefix}glitch2
- • ${prefix}coolg
- • ${prefix}coolwg
- • ${prefix}realistic
- • ${prefix}space3d
- • ${prefix}gtiktok
- • ${prefix}stone
- • ${prefix}marvel
- • ${prefix}marvel2
- • ${prefix}pornhub
- • ${prefix}avengers
- • ${prefix}metalr
- • ${prefix}metalg
- • ${prefix}metalg2
- • ${prefix}halloween2
- • ${prefix}lion
- • ${prefix}wolf_bw
- • ${prefix}wolf_g
- • ${prefix}ninja
- • ${prefix}3dsteel
- • ${prefix}horror2
- • ${prefix}lava
- • ${prefix}bagel
- • ${prefix}blackpink
- • ${prefix}rainbow2
- • ${prefix}water_pipe
- • ${prefix}halloween
- • ${prefix}sketch
- • ${prefix}sircuit
- • ${prefix}discovery
- • ${prefix}metallic2
- • ${prefix}fiction
- • ${prefix}demon
- • ${prefix}transformer
- • ${prefix}berry
- • ${prefix}thunder
- • ${prefix}magma
- • ${prefix}3dstone
- • ${prefix}neon
- • ${prefix}glitch
- • ${prefix}harry_potter
- • ${prefix}embossed
- • ${prefix}broken
- • ${prefix}papercut
- • ${prefix}gradient
+| • ${prefix}halloween2
+| • ${prefix}horror
+| • ${prefix}game8bit
+| • ${prefix}layered
+| • ${prefix}glitch2
+| • ${prefix}coolg
+| • ${prefix}coolwg
+| • ${prefix}realistic
+| • ${prefix}space3d
+| • ${prefix}gtiktok
+| • ${prefix}stone
+| • ${prefix}marvel
+| • ${prefix}marvel2
+| • ${prefix}pornhub
+| • ${prefix}avengers
+| • ${prefix}metalr
+| • ${prefix}metalg
+| • ${prefix}metalg2
+| • ${prefix}halloween2
+| • ${prefix}lion
+| • ${prefix}wolf_bw
+| • ${prefix}wolf_g
+| • ${prefix}ninja
+| • ${prefix}3dsteel
+| • ${prefix}horror2
+| • ${prefix}lava
+| • ${prefix}bagel
+| • ${prefix}blackpink
+| • ${prefix}rainbow2
+| • ${prefix}water_pipe
+| • ${prefix}halloween
+| • ${prefix}sketch
+| • ${prefix}sircuit
+| • ${prefix}discovery
+| • ${prefix}metallic2
+| • ${prefix}fiction
+| • ${prefix}demon
+| • ${prefix}transformer
+| • ${prefix}berry
+| • ${prefix}thunder
+| • ${prefix}magma
+| • ${prefix}3dstone
+| • ${prefix}neon
+| • ${prefix}glitch
+| • ${prefix}harry_potter
+| • ${prefix}embossed
+| • ${prefix}broken
+| • ${prefix}papercut
+| • ${prefix}gradient
  • ${prefix}glossy
  • ${prefix}watercolor
  • ${prefix}multicolor
