@@ -18,7 +18,8 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
 
 
                  🌸 *STATISTICS* 🌸
-       ____________________________________                                     
+            ____________________________
+       
   _*Upload*_ :${upload}
   _*Downloads*_ :${download}
   _*Owner*_ :${ownerName}
@@ -29,7 +30,8 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
   
 
                    👨‍🍳 *YOUR INFO* 👨‍🍳 
-       ________________________________________
+           ________________________________
+       
   _*Name*_ :${pushname !== undefined ? pushname : '-'}
   _*Status*_ :${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
   _*Limit*_ :${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
@@ -39,6 +41,7 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
 
 
 ___________________________________________
+
                     📃 *MAIN MENU* 📃${petik}
 _____________________________________
 |
