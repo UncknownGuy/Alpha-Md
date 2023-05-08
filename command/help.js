@@ -17,31 +17,27 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
 
 
                   🌸 *STATISTICS* 🌸
-       _____________________________________________
+             ___________________________________________
+             |                                         |
+             |>_*Upload*_    > ${upload}               |
+             |>_*Downloads*_ > ${download}             |
+             |> _*Owner*_    > ${ownerName}            |
+             |>_*Bot Name*_  > ${botName}              |
+             |>_*Time*_      > ${jam}                  |
+             |>_*Date*_      > ${tanggal(new Date())}
+             |>_*Uptime*_    > ${runtime(process.uptime())}|
+             ___________________________________________
 
-                _*Upload*_ : ${upload}
-             _*Downloads*_ : ${download}
-
-                    🎭 *BOT INFO* 🎭
-       ______________________________________________
-
-             _*Created By*_ : ${ownerName}
-             _*Bot Name*_ : ${botName}
-               _*Time*_ : ${jam}
-               _*Date*_ : ${tanggal(new Date())}
-              _*Uptime*_ : ${runtime(process.uptime())}
-       _______________________________________________
-
-                     👨‍🍳 *USER INFO* 👨‍🍳
-       ________________________________________________
-
-               _*Name*_ : ${pushname !== undefined ? pushname : '-'}
-              _*Status*_ : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-              _*Limit*_ : ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-            _*Limit Game*_ : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
-             _*Balance*_ : ${getBalance(sender, balance)}
-               _*Role*_ : ${role}
-
+                     👨‍🍳 *YOUR INFO* 👨‍🍳
+             ___________________________________________
+             |
+             |>_*Name*_       > ${pushname !== undefined ? pushname : '-'}
+             |>_*Status*_     > ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+             |>_*Limit*_      > ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+             |>_*Limit Game*_ > ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
+             |>_*Balance*_    > ${getBalance(sender, balance)}
+             |>_*Role*_       > ${role}
+             |___________________________________________
                     📃 *MAIN MENU* 📃${petik}
 _____________________________________
 |
@@ -61,7 +57,6 @@ _____________________________________
 |___________________________________
       
                  🧬 *CONVERTER/TOOLS* 🧬${petik} 
-___________________________________
 |
 |--> ${prefix}sticker
 |--> ${prefix}stickerwm
@@ -85,7 +80,6 @@ ___________________________________
 |_____________________________________________
 
                   💻 *ANONYMOUS CHATS* 💻${petik}
-________________________________
 |
 |-- ${prefix}menfess
 |-- ${prefix}confess
@@ -100,7 +94,6 @@ ________________________________
 |___________________________________________
 
                      🛒 *STORE MENU* 🛒${petik}
-________________________________
 |
 |-- ${prefix}list
 |-- ${prefix}addlist
@@ -122,7 +115,6 @@ ________________________________
 |__________________________________________
 
                   🕹 *RPG GAMES* 🕹${petik}
-_______________________________
 |
 |-- ${prefix}inventory
 |-- ${prefix}mining
@@ -156,7 +148,6 @@ _______________________________
 |__________________________________________
 
                   📡 *DOWNLOADS MENU* 📡${petik}
-_______________________________
 |
 |-- ${prefix}play
 |-- ${prefix}ytmp3
@@ -173,7 +164,6 @@ _______________________________
 |_________________________________________
 
                     🎗 *GROUP MENU* 🎗${petik}
-_____________________________
 |
 |-- ${prefix}autoaigc
 |-- ${prefix}afk
@@ -213,7 +203,6 @@ _____________________________
 |________________________________________
 
                    🎮 *GAME MENU* 🎮${petik}
-___________________________
 |
 | • ${prefix}tebakgambar
 | • ${prefix}tebakkata
@@ -232,7 +221,6 @@ ___________________________
 |_____________________________________________
 
                     🔍 *SEARCH MENU* 🔍${petik}
-_______________________________
 |
 |-- ${prefix}lirik
 |-- ${prefix}grupwa
@@ -241,7 +229,6 @@ _______________________________
 |_____________________________________________
 
                       📕 *RANDOM MENU* 📕${petik}
-__________________________________
 |
 | • ${prefix}cecan
 | • ${prefix}cogan
@@ -249,7 +236,6 @@ __________________________________
 |_____________________________________________
 
                       💲 *BALANCE MENU* 💲${petik}
-_________________________________
 |
 | • ${prefix}topglobal
 | • ${prefix}toplocal
@@ -261,7 +247,6 @@ _________________________________
 |______________________________________________
 
                         🛡 *STORAGE* 🛡${petik}
-______________________________
 |
 | • ${prefix}addstik
 | • ${prefix}addvn
@@ -274,7 +259,6 @@ ______________________________
 |____________________________________________
  
                        🔑 *BAILEYS* 🔑${petik}
-_______________________________
 |
 | • ${prefix}fitnah
 | • ${prefix}nowa
@@ -286,7 +270,6 @@ _______________________________
 |_______________________________________________
 
                       🤓 *OWNERS MENU* 🤓${petik}
-________________________________
 |
 |-- ${prefix}autoaipc
 |-- ${prefix}autoread
@@ -315,7 +298,6 @@ ________________________________
 |__________________________________________
 
                         *ASUPAN MENU*${petik}
-___________________________
 |
 | • ${prefix}chika
 | • ${prefix}delvira
@@ -342,7 +324,6 @@ ___________________________
 |_________________________________________
 
                        🩱 *NSFW MENU* 🩱${petik}
-_______________________________
 |
 |-- ${prefix}baka
 |-- ${prefix}smug
@@ -402,7 +383,6 @@ _______________________________
 |_____________________________________________
 
                         ♦ *TEXTPRO MENU* ♦${petik}
-_________________________________
 |
 | • ${prefix}halloween2
 | • ${prefix}horror
