@@ -20,8 +20,8 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
 _____________________________________________
 |
 |
-|-- *Upload* : ${upload}
-|-- *Downloads* : ${download}
+|-- _*Upload*_ : ${upload}
+|-- _*Downloads*_ : ${download}
 |
 |______________________________________________
 
@@ -29,30 +29,27 @@ _____________________________________________
 _______________________________________________
 |
 |
-|-- *Created By* : ${ownerName}
-|-- *Bot Name* : ${botName}
-|-- *Time* : ${jam}
-|-- *Date* : ${tanggal(new Date())}
-|-- *Uptime* : ${runtime(process.uptime())}
+|-- _*Created By*_ : ${ownerName}
+|-- _*Bot Name*_ : ${botName}
+|-- _*Time*_ : ${jam}
+|-- _*Date*_ : ${tanggal(new Date())}
+|-- _*Uptime*_ : ${runtime(process.uptime())}
 |
 |_______________________________________________
 
                      👨‍🍳 *USER INFO* 👨‍🍳
 ________________________________________________
 |
-|
-|-- *Name* : ${pushname !== undefined ? pushname : '-'}
-|-- *Status* : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-|-- *Limit* : ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-|-- *Limit Game* : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
-|-- *Balance* : ${getBalance(sender, balance)}
-|-- *Role* : ${role}
-| 
+|-- _*Name*_ : ${pushname !== undefined ? pushname : '-'}
+|-- _*Status*_ : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+|-- _*Limit*_ : ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+|-- _*Limit Game*_ : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
+|-- _*Balance*_ : ${getBalance(sender, balance)}
+|-- _*Role*_ : ${role}
 |_______________________________________________
 
                     📃 *MAIN MENU* 📃${petik}
-_______________________________________
-|
+_____________________________
 |
 |-- ${prefix}menu
 |-- ${prefix}infobot
@@ -67,12 +64,10 @@ _______________________________________
 |-- ${prefix}speed
 |-- ${prefix}runtime
 |-- ${prefix}listbahasa${petik}
-|
 |_______________________________________________
       
                  🧬 *CONVERTER/TOOLS* 🧬${petik} 
-______________________________________
-|
+______________________________
 |
 |-- ${prefix}sticker
 |-- ${prefix}stickerwm
@@ -93,12 +88,10 @@ ______________________________________
 |-- ${prefix}foliokanan
 |-- ${prefix}say
 |-- ${prefix}translate${petik}
-|
 |__________________________________________________
 
                   💻 *ANONYMOUS CHATS* 💻${petik}
-__________________________________________
-|
+________________________________
 |
 |-- ${prefix}menfess
 |-- ${prefix}confess
@@ -110,12 +103,10 @@ __________________________________________
 |-- ${prefix}next
 |-- ${prefix}stop
 |-- ${prefix}sendprofile${petik}
-|
 |___________________________________________________
 
                      🛒 *STORE MENU* 🛒${petik}
-________________________________________
-|
+________________________________
 |
 |-- ${prefix}list
 |-- ${prefix}addlist
@@ -134,12 +125,10 @@ ________________________________________
 |-- ${prefix}setproses
 |-- proses < reply chat >
 |-- done < reply chat >${petik}
-|
 |_________________________________________________
 
                   🕹 *RPG GAMES* 🕹${petik}
-_____________________________________
-|
+_______________________________
 |
 |-- ${prefix}inventory
 |-- ${prefix}mining
@@ -170,12 +159,10 @@ _____________________________________
 |-- ${prefix}nebang
 |-- ${prefix}goplanet
 |-- ${prefix}jualbahankimia${petik}
-|
 |__________________________________________________
 
                   📡 *DOWNLOADS MENU* 📡${petik}
-__________________________________________
-|
+_______________________________
 |
 |-- ${prefix}play
 |-- ${prefix}ytmp3
@@ -189,12 +176,10 @@ __________________________________________
 |-- ${prefix}tiktokaudio
 |-- ${prefix}mediafire
 |-- ${prefix}gitclone${petik}
-|
-|__________________________________________________
+|_________________________________________________
 
                     🎗 *GROUP MENU* 🎗${petik}
-_______________________________________
-|
+_____________________________
 |
 |-- ${prefix}autoaigc
 |-- ${prefix}afk
@@ -231,12 +216,10 @@ _______________________________________
 |-- ${prefix}revoke
 |-- ${prefix}hidetag
 |-- ${prefix}checksewa${petik}
-|
 |__________________________________________________
 
                    🎮 *GAME MENU* 🎮${petik}
-_____________________________________
-|
+___________________________
 |
 | • ${prefix}tebakgambar
 | • ${prefix}tebakkata
@@ -252,33 +235,27 @@ _____________________________________
 | • ${prefix}delttt
 | • ${prefix}casino
 | • ${prefix}delcasino${petik}
-|
 |______________________________________________________
 
                     🔍 *SEARCH MENU* 🔍${petik}
-________________________________________
-|
+_______________________________
 |
 |-- ${prefix}lirik
 |-- ${prefix}grupwa
 |-- ${prefix}pinterest
 |-- ${prefix}ytsearch${petik}
-|
 |_______________________________________________________
 
                       📕 *RANDOM MENU* 📕${petik}
-________________________________________
-|
+__________________________________
 |
 | • ${prefix}cecan
 | • ${prefix}cogan
 | • ${prefix}waifu${petik}
-|
 |________________________________________________________
 
                       💲 *BALANCE MENU* 💲${petik}
-_________________________________________
-|
+_________________________________
 |
 | • ${prefix}topglobal
 | • ${prefix}toplocal
@@ -287,12 +264,10 @@ _________________________________________
 | • ${prefix}transfer
 | • ${prefix}limit
 | • ${prefix}balance${petik}
-|
 |_________________________________________________________
 
                         🛡 *STORAGE* 🛡${petik}
-_______________________________________
-|
+______________________________
 |
 | • ${prefix}addstik
 | • ${prefix}addvn
@@ -302,12 +277,10 @@ _______________________________________
 | • ${prefix}listvn
 | • ${prefix}listimg
 | • ${prefix}listvid${petik}
-|
 |___________________________________________________________
  
                        🔑 *BAILEYS* 🔑${petik}
-_______________________________________
-|
+_______________________________
 |
 | • ${prefix}fitnah
 | • ${prefix}nowa
@@ -316,12 +289,10 @@ _______________________________________
 | • ${prefix}react
 | • ${prefix}setcmd
 | • ${prefix}delcmd${petik}
-|
-|_____________________________________________________________
+|___________________________________________________________
 
                       🤓 *OWNERS MENU* 🤓${petik}
-__________________________________________
-|
+________________________________
 |
 |-- ${prefix}autoaipc
 |-- ${prefix}autoread
@@ -347,11 +318,10 @@ __________________________________________
 |-- ${prefix}delpremium
 |-- ${prefix}addsewa
 |-- ${prefix}delsewa${petik}
-|
-|___________________________________________________________
+|__________________________________________________________
 
                         *ASUPAN MENU*${petik}
-______________________________________
+___________________________
 |
 | • ${prefix}chika
 | • ${prefix}delvira
@@ -375,11 +345,10 @@ ______________________________________
 | • ${prefix}santuy
 | • ${prefix}ukhty
 | • ${prefix}syifa${petik}
-|
 |____________________________________________________________
 
                        🩱 *NSFW MENU* 🩱${petik}
-_________________________________________
+_______________________________
 |
 |-- ${prefix}baka
 |-- ${prefix}smug
@@ -436,12 +405,10 @@ _________________________________________
 |-- ${prefix}tentacles
 |-- ${prefix}thighs
 |-- ${prefix}zettai${petik}
-|
-|_____________________________________________________________
+|____________________________________________________________
 
                         ♦ *TEXTPRO MENU* ♦${petik}
-____________________________________________
-|
+_________________________________
 |
 | • ${prefix}halloween2
 | • ${prefix}horror
