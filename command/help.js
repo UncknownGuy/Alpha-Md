@@ -16,28 +16,27 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
     return`*Hello* ${pushname !== undefined ? pushname : 'Kak'}
 
 
-                  🌸 *STATISTICS* 🌸
-             ___________________________________________
-             |                                         |
-             |>_*Upload*_    > ${upload}               |
-             |>_*Downloads*_ > ${download}             |
-             |> _*Owner*_    > ${ownerName}            |
-             |>_*Bot Name*_  > ${botName}              |
-             |>_*Time*_      > ${jam}                  |
-             |>_*Date*_      > ${tanggal(new Date())}
-             |>_*Uptime*_    > ${runtime(process.uptime())}|
-             ___________________________________________
+                 🌸 *STATISTICS* 🌸
+         ____________________________________
+                                         
+>  _*Upload*_ ${upload}
+>  _*Downloads*_ ${download}
+>   _*Owner*_ ${ownerName}
+>  _*Bot Name*_  ${botName}      
+>  _*Time*_   ${jam}  
+>  _*Date*_  ${tanggal(new Date())}
+>  _*Uptime*_  ${runtime(process.uptime())}
 
-                     👨‍🍳 *YOUR INFO* 👨‍🍳
-             ___________________________________________
-             |
-             |>_*Name*_       > ${pushname !== undefined ? pushname : '-'}
-             |>_*Status*_     > ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-             |>_*Limit*_      > ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-             |>_*Limit Game*_ > ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
-             |>_*Balance*_    > ${getBalance(sender, balance)}
-             |>_*Role*_       > ${role}
-             |___________________________________________
+                   👨‍🍳 *YOUR INFO* 👨‍🍳 
+         ________________________________________
+        
+>  _*Name*_ ${pushname !== undefined ? pushname : '-'}
+>  _*Status*_${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+>  _*Limit*_${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+>  _*Limit Game*_${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
+>  _*Balance*_${getBalance(sender, balance)}
+>  _*Role*_${role}
+___________________________________________
                     📃 *MAIN MENU* 📃${petik}
 _____________________________________
 |
